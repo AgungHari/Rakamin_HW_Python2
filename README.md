@@ -1,6 +1,6 @@
 [![banner1](rakaminacademy_cover.jpg)](https://www.rakamin.com/)
 
-# Rakamin Homework : Data Processing
+# Rakamin Homework : Python Programming
 
 ## Deskripsi
 
