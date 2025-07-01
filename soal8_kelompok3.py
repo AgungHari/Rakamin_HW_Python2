@@ -30,6 +30,7 @@ def to_fahrenheit(value, unit):
     Returns:
     - float: Nilai suhu dalam Fahrenheit
     """
+    unit = unit.lower() 
     celsius = to_celsius(value, unit)
     return (celsius * 9/5) + 32
 
@@ -44,6 +45,7 @@ def to_kelvin(value, unit):
     Returns:
     - float: Nilai suhu dalam Kelvin
     """
+    unit = unit.lower()
     celsius = to_celsius(value, unit)
     return celsius + 273.15
 
@@ -62,6 +64,7 @@ def average_temperature(values, unit='celsius'):
     - ValueError: Jika ada elemen bukan angka
     """
     try:
+        unit = unit.lower()
         total = sum([float(v) for v in values])
         avg_celsius = total / len(values)
     # Konversi ke unit target
